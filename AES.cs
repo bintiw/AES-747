@@ -21,7 +21,6 @@ namespace AES
 
             Console.ReadKey();
 
-
         }
 
         public static string ConvertAsciiToHex(string asciiString)  //Function to Convert ASCII to HEX
