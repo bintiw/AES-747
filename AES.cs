@@ -12,7 +12,7 @@ namespace AES
     {
         static void Main(string[] args)
         {
-            string key = "cece07f7ee9230e76ccf497bdbbdbc0a";
+            string key = "cece07f7ee9230e76ccf497bdbbdbc0a";     //Key For AES Encryption
 
             Console.WriteLine("Working...");
             encc(key);
@@ -24,7 +24,7 @@ namespace AES
 
         }
 
-        public static string ConvertAsciiToHex(string asciiString)
+        public static string ConvertAsciiToHex(string asciiString)  //Function to Convert ASCII to HEX
         {
             string hex = "";
             foreach (char c in asciiString)
@@ -35,7 +35,7 @@ namespace AES
             return hex;
         }
 
-        public static string ConvertHextoAscii(string HexString)
+        public static string ConvertHextoAscii(string HexString)  //Function to Convert HEX to ASCII
         {
             string asciiString = "";
             for (int i = 0; i < HexString.Length; i += 2)
@@ -49,7 +49,7 @@ namespace AES
             return asciiString;
         }
 
-        public static void decc(string key)
+        public static void decc(string key)   //Funtion for AES Decryption TEXT
         {
             string filename = System.IO.Path.GetFullPath(Directory.GetCurrentDirectory() + @"\AES_result.txt");
             string text = File.ReadAllText(filename, Encoding.UTF8);
@@ -68,7 +68,7 @@ namespace AES
         }
 
 
-        public static void encc(string key)
+        public static void encc(string key)   //Function for AES Encryption TEXT
         {
             string filename = System.IO.Path.GetFullPath(Directory.GetCurrentDirectory() + @"\AES.txt");
             string text = File.ReadAllText(filename, Encoding.UTF8);
@@ -95,7 +95,7 @@ namespace AES
 
 
         }
-        public static string AES_Dec(string k, string p)
+        public static string AES_Dec(string k, string p)  //AES Decryption Algorithm Implementation
         {
             string key = keyexpansion(k);
             string temp = p;
@@ -119,7 +119,7 @@ namespace AES
         }
 
 
-        public static string AES_Enc(string k, string p)
+        public static string AES_Enc(string k, string p)  //AES Encryption Algorithm Implementation
         {
             string key = keyexpansion(k);
             string temp = "";
@@ -144,7 +144,7 @@ namespace AES
             return (temp);
 
         }
-
+// Support Functions for Algorithms
         public static string keyready(string a)
         {
             return ("" + a[0] + a[1] + a[8] + a[9] + a[16] + a[17] + a[24] + a[25] + a[2] + a[3] + a[10] + a[11] + a[18] + a[19] + a[26] + a[27] + a[4] + a[5] + a[12] + a[13] + a[20] + a[21] + a[28] + a[29] + a[6] + a[7] + a[14] + a[15] + a[22] + a[23] + a[30] + a[31]);
@@ -354,7 +354,7 @@ namespace AES
 
 
 
-
+// Galios Multiplication
         public static string gmul(string c, int b)
         {
 
