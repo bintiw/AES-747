@@ -1,4 +1,10 @@
-﻿using System;
+// ===============================
+// AUTHOR     : Binayak Tiwari  
+// CREATE DATE     : 04/12/2017
+// PURPOSE     :    This code finds out the prime number up to 100,000,000. You can run PrimeFinder.exe and get the result in prime_list.txt
+// DESCRIPTION : Sieve Algorithm is implemented
+//==================================
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
