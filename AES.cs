@@ -12,7 +12,7 @@ namespace AES
     {
         static void Main(string[] args)
         {
-            string key = "cece07f7ee9230e76ccf497bdbbdbc0a";     //Key For AES Encryption
+            string key = "cece07f7ee9230e76ccf497bdbbdbc0a";     //128 bit Key For AES Encryption
 
             Console.WriteLine("Working...");
             encc(key);
