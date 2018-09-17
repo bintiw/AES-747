@@ -1,4 +1,8 @@
-﻿//---ASCII---
+// ===============================
+// AUTHOR     : Binayak Tiwari  
+// CREATE DATE     : 03/16/2017
+// PURPOSE     :    AES Encryption Decryption Implementation
+//==================================
 using System;
 using System.Collections.Generic;
 using System.Linq;
